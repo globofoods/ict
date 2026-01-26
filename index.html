@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ICT Leave System</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ICT Leave">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://img2.pic.in.th/ict-lobo.png">
+    <link rel="icon" type="image/png" href="https://img2.pic.in.th/ict-lobo.png">
+    
+    <style>
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: sans-serif;
+            color: #555;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+
+    <script>
+        // --- ใส่ Link ยาวๆ ของ Google Apps Script ที่ Deploy แล้ว ตรงนี้ ---
+        var googleScriptUrl = "https://script.google.com/macros/s/AKfycbwyKCgUYn9H5ulkSHQZTT1m-SGjZQpir2S5nccsA-N44UvgSoaAykCSEuTNxrn3d8_B/exec"; 
+        
+        // สั่งให้เด้งไปทันที
+        window.location.replace(googleScriptUrl);
+    </script>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>กำลังเข้าสู่ระบบ...</p>
+</body>
+</html>
